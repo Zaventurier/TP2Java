@@ -35,8 +35,8 @@ public class Exercice8Pizzeria {
         int qté = sc.nextInt();
         int prix = 0;
         String nomPizza;
-        String sup;
-        String sup2;
+        String sup = "";
+        String sup2 = "";
         
         if(pizza == 1){
             prix = 9*qté;
@@ -71,7 +71,6 @@ public class Exercice8Pizzeria {
         }
         else{
         reponse ="";
-        sup = "";
     }
         reponse = "";
         System.out.println("Voulez vous le supplément Aubergine ?");
@@ -79,11 +78,10 @@ public class Exercice8Pizzeria {
         if (reponse == "oui" | reponse == "OUI"){
             
             prix = prix+2;
-            sup2 ="Aubergine";
+            sup2 = "Aubergine";
         }
         else{
         reponse ="";
-        sup2 = "";
         }
         System.out.println("----------------");
         System.out.println("Vous avez choisi " +qté + " pizzas " + nomPizza);
