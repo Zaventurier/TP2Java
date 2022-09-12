@@ -64,7 +64,7 @@ public class Exercice8Pizzeria {
         }
         System.out.println("Voulez vous un supplément oeufs ?");
         String reponse = sc.next();
-        if (reponse == "oui" | reponse == "OUI"){
+        if ((reponse == "oui") || reponse == "OUI"){
             
             prix = prix+1;
             sup = "Oeufs";
@@ -75,7 +75,7 @@ public class Exercice8Pizzeria {
         reponse = "";
         System.out.println("Voulez vous le supplément Aubergine ?");
         reponse = sc.next();
-        if (reponse == "oui" | reponse == "OUI"){
+        if (reponse == "oui" || reponse == "OUI"){
             
             prix = prix+2;
             sup2 = "Aubergine";
@@ -85,7 +85,7 @@ public class Exercice8Pizzeria {
         }
         System.out.println("----------------");
         System.out.println("Vous avez choisi " +qté + " pizzas " + nomPizza);
-        System.out.println("avec comme supplément : " +sup+", " + sup2);
+        System.out.println("avec comme supplément : " +sup.toString()+", " + sup2);
         System.out.println("Le prix total est de : " +prix+"€");
         System.out.println("----------------");
         
