@@ -64,7 +64,7 @@ public class Exercice8Pizzeria {
         }
         System.out.println("Voulez vous un supplément oeufs ?");
         String reponse = sc.next();
-        if ((reponse == "oui") || reponse == "OUI"){
+        if (reponse.equals("Oui".toLowerCase())){
             
             prix = prix+1;
             sup = "Oeufs";
@@ -75,7 +75,7 @@ public class Exercice8Pizzeria {
         reponse = "";
         System.out.println("Voulez vous le supplément Aubergine ?");
         reponse = sc.next();
-        if (reponse == "oui" || reponse == "OUI"){
+        if (reponse.equals("Oui".toLowerCase())){
             
             prix = prix+2;
             sup2 = "Aubergine";
